@@ -304,8 +304,13 @@ class MIDI(QMainWindow, Ui_MainWindow):
         self.con.commit()
         self.blit_music()
 
+def except_hook(cls, exception, traceback):
+    sys.__excepthook__(cls, exception, traceback)
+
+
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     ex = MIDI()
     ex.show()
+    sys.excepthook = except_hook
     sys.exit(app.exec())
