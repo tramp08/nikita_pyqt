@@ -97,7 +97,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Никита плейер"))
         self.play_stop_Button.setText(_translate("MainWindow", "►"))
         self.new_music_button.setText(_translate("MainWindow", ">>"))
         self.back_music_Button.setText(_translate("MainWindow", "<<"))
